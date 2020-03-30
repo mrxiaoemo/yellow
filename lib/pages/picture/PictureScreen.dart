@@ -51,6 +51,7 @@ class PictureScreenState extends State<PictureScreen> {
         header: MaterialHeader(),
         footer: MaterialFooter(),
         onRefresh: () async {
+          pageNo=1;
           loadHotList(pageSize, pageNo, "", "", "");
         },
         onLoad: () async {
